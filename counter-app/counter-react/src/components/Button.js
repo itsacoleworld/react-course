@@ -1,10 +1,12 @@
 import React from 'react'
 
-const Button = ({ incremenet, onClickFunction }) => {
+const Button = ({ buttonText, increment, onClickFunction }) => {
     const handleClick = () => {
-        onClickFunction(incremenet)
+        onClickFunction(increment)
     }
-    return <button onClick={handleClick}>+{incremenet}</button>
+    return (
+        <button onClick={handleClick}>{buttonText}</button>
+    )
 }
 
 export default Button
