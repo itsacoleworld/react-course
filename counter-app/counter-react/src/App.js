@@ -39,6 +39,9 @@ function App() {
                 <span>{count}</span>
             </div>
             <Button buttonText={'Reset'} onClickFunction={resetCount} />
+            <div>
+                <h2>Results</h2>
+            </div>
 
 
         </div>
