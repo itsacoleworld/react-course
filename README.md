@@ -2,6 +2,6 @@
 
 Current Progress:
 
-Last stop: https://thereactcourse.com/rhkobmmqUOGCgx7GBuyo/counter/5/
+Last stop: https://thereactcourse.com/rhkobmmqUOGCgx7GBuyo/github-users/3/
 
-TODO: Try last challenge
+TODO: handleSubmit functionality
