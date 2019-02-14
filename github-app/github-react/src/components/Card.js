@@ -7,6 +7,7 @@ const Card = props => {
             <div>
                 <div style={{ fontWeight: 'bold' }}>{props.name}</div>
                 <div>{props.blog}</div>
+                <div>{props.html_url}</div>
             </div>
         </div>
     )

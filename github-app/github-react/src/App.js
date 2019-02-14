@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
 
-class App extends Component {
-  render() {
+import Form from './components/Form'
+import CardList from './components/CardList'
+
+const App = () => {
+
+  const [cards, setCards] = useState([])
+
+    const addNewCard = cardInfo => {
+      setCards(cards.concat(cardInfo))
+    }
+
+    const removeLastCard = () => {
+      setCards(cards.splice(-1,2))
+    }
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+        <div>
+          <Form onSubmit={addNewCard} />
+          <CardList cards={cards} />
+          <button onClick={removeLastCard}>Remove Last Card</button>
+        </div>
+    )
 }
 
-export default App;
+export default App

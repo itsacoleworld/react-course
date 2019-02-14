@@ -2,6 +2,6 @@
 
 Current Progress:
 
-Last stop: https://thereactcourse.com/rhkobmmqUOGCgx7GBuyo/github-users/3/
+Last stop: https://thereactcourse.com/rhkobmmqUOGCgx7GBuyo/github-users/5/
 
-TODO: handleSubmit functionality
+TODO: finish second challenge
