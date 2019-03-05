@@ -8,11 +8,13 @@ const App = () => {
   const [cards, setCards] = useState([])
 
     const addNewCard = cardInfo => {
-      setCards(cards.concat(cardInfo))
+      console.log(cards);
+      setCards(cards.concat(cardInfo));
+      console.log(cards);
     }
 
     const removeLastCard = () => {
-      setCards(cards.splice(-1,2))
+      setCards(cards.slice(0,1));
     }
 
     return (
@@ -21,6 +23,7 @@ const App = () => {
           <CardList cards={cards} />
           <button onClick={removeLastCard}>Remove Last Card</button>
         </div>
+
     )
 }
 
