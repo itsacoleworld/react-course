@@ -1,15 +1,21 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react'
 
 import './App.css';
 import './styles.css'
 import Canvas from './components/Canvas'
+import ColorPicker from './components/ColorPicker'
 
-const App = () => {
-  return (
-      <div className="App">
-        <Canvas />
-      </div>
-  )
+
+
+function App() {
+    const [color, setColor] = useState(0)
+    return (
+          <div className="App">
+            <ColorPicker currentColor={color}
+                setColor={color => setColor(color)} />
+            <Canvas />
+          </div>
+      )
 }
 
 

@@ -1,7 +1,7 @@
-import React, { Component, useState } from 'react'
+import React, { useState } from 'react'
 
 import Pixel from './Pixel'
-import Color from './Color'
+import Colors from '../Colors'
 
 const Canvas = () => {
     const [matrix, setMatrix] = useState(Array(30)
@@ -15,7 +15,7 @@ const Canvas = () => {
                     return (
                         <Pixel
                             key={`${rowIndex}-${colIndex}`}
-                            background={Color[matrix[rowIndex][colIndex]]}
+                            background={Colors[matrix[rowIndex][colIndex]]}
                         />
                     )
                 })

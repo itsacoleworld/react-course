@@ -2,7 +2,7 @@
 
 Current Progress:
 
-Last stop: https://thereactcourse.com/rhkobmmqUOGCgx7GBuyo/pixel-art/5-colorpicker/
+Last stop: https://thereactcourse.com/rhkobmmqUOGCgx7GBuyo/pixel-art/7-color-pixel/
 
 TODO: 
 - finish third challenge of counter app
